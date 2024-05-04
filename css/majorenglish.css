@@ -1,0 +1,100 @@
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 31.3%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+   font-family: "professional";/* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #F88379;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* FOOTER*/
+
+
+
+.big{font-size: 65px; text-align: center; font-family:"fancy"}
+.smaller{font-size: 45px; text-align: center; font-family: "fancy"}
+
+.writing{font-size: 20px; font-family: "professional"; padding-left: 20px; padding-right:20px;padding-top:10px;background-color: white}
+
+
+@font-face{font-family: "fancy"; src: url(/fonts/fancytext.ttf)}
+
+@font-face{font-family: "professional"; src: url(/fonts/professional.ttf)}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 31.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  font-family: "professional"
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #F88379;
+}
+
+footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+   font-family: "professional";
+   font-size: 13px;
+   background-color: #F88379
+   }
+/* FOOTER */
+.blog{padding-left: 100px; padding-right: 100px; text-indent: 50px}
+
